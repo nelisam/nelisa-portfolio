@@ -4,51 +4,103 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Nelisa Maqungo | Web Portfolio</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
-        <header>
-            <nav class="top-nav">
-                <ul class="nav-list">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Work</a></li>
-                    <li><a href="">Contact</a></li> 
-                </ul>
-            </nav>
-            <div class="landing-text">
-                <h1>Hello!</h1>
-                <h2>I'm Nelisa, a Web Developer based in Cape Town.</h2>
-            </div>
-        </header>
-        <section class="work">
-
-        </section>
-        <footer>
-            <h3>Contact</h3>
-            <div class="contact">
-                <ul class="nav-list">
-                    <li>
-                        <a href="https://www.linkedin.com/in/nelisa-maqungo-43215b156">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="mailto:nelisamaqungo@gmail.com">Email</a>
-                    </li>
-                    <li>
-                        <a href="#">Resume</a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home">
+      <!--<h1><span class="auto-input"></span></h1>-->
+      <img src="assets/white-logo.png" alt="">
+      <div class="circle">
+        <div class="logo">
+          <div class="text">
+            <p>Nelisa Maqungo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h3 class="heading">
+        hello! I am Nelisa, <br/>
+        a web developer
+      </h3>
+      <p class="about">
+        Welcome to my mini portfolio website! My name is Nelisa Maqungo. I am a web developer and currently living in sunny Cape Town. 
+        I am a person who is very passionate when it comes to frontend developer and surveillance capitalism. One of my dreams is to master all things web development and become
+        an award winning web developer, and now, I am working toward it!
+      </p>
+    </section>
+    <section id="work">
+      <div class="container">
+        <h3 class="heading">Project I've work on</h3>
+        <div class="row">
+          <div class="column">
+            <img src="assets/africanpure.png" alt="">
+            <img src="assets/foragoodmind.png" alt="">
+            <img src="assets/Lil-Lets.png" alt="">
+          </div>
+          <div class="column">
+            <img src="assets/The-Dose.png" alt="">
+            <img src="assets/mrdfood.png" alt="">
+            <img src="assets/Dunlop.png" alt="">
+            <img src="assets/Norton-Rose.png" alt="">
+          </div>
+          <div class="column">
+            <img src="assets/foragoodleaf.png" alt="">
+            <img src="assets/Snowflake.png" alt="">
+            <img src="assets/Belgotex.png" alt="">
+            <img src="assets/maven.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h3 class="heading">Let's get in touch</h3>
+    </section>
+    <footer>
+      
+      <ul class="nav-list">
+        <li><a href="mailto:nelisamaqungo@gmail.com?subject=Get%20In%20Touch%20-%20Github%20Portfolio" title="Email">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/nelisa-maqungo">LinkedIn</a></li>
+        <li><a href="assets/nelisa_web_developer_portfolio_resume.pdf">Resume</a></li>
+      </ul>
+    </footer>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <script src="" async defer></script>
+    <script>
+      const text = document.querySelector('.text p');
+      text.innerHTML = text.innerText.split("").map(
+        (char, i) =>
+        `<span style="transform:rotate(${i * 8.1}deg)">${char}</span>`
         
-        <script src="" async defer></script>
-    </body>
+      ).join("")
+    </script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      let typed = new Typed(".auto-input", {
+        strings: ["Hello","I'm Nelisa","I'm a Web Developer", "Nice to meet you!"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+      })
+    </script>-->
+  </body>
 </html>
